@@ -8,7 +8,19 @@
     <title>Jogo da memória</title>
 </head>
 <body>
-    <h1><span class="result"></span></h1>
+    <div class="painel">
+        <div id="temporizador">Tempo: <span id="tempoRestante">60</span> segundos</div>
+        <p class="pares">Pares encontrados: 0</p>
+        <p class="pontos">Pontuação: 0</p>
+    </div>
     <div class="board"></div>
+    <div class="initialDisplay">
+        <p class="title">Jogo da Memória – Passeio no Espaço</p>
+        <p class="sub">Para iniciar, entre com o seu nome por favor...</p>
+        <form class="form-login">
+            <input class="nome" type="text" placeholder="Digite o seu nome:">
+            <button id="btn-entrar" onclick="initialDisplay()">Entrar</button>
+        </form>
+    </div>
 </body>
 </html>
