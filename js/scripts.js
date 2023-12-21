@@ -160,7 +160,7 @@ document.addEventListener("DOMContentLoaded", () => {
         cardsChosenId.push(cardId)
         this.setAttribute('src', cards[cardId].img)
         if(cardsChosen.length === 2) {
-            setTimeout(checkForMatch, 300)
+            setTimeout(checkForMatch, 500)
         }
     }
 })
@@ -171,7 +171,7 @@ function iniciarTemporizador() {
       document.getElementById("tempoRestante").innerText = tempoRestante
 
       if (tempoRestante <= 0) {
-        alert("Tempo esgotado.!")
+        alert("Tempo esgotado!")
         reiniciarTemporizador()
       }
     }, 1000)
